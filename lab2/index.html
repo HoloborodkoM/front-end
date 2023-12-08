@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="Лабораторна робота, Основи Front-end">
+   <meta name="description" content="Сторінка з лабораторною роботлю №2 Ватажка М.А.">
+   <title>Ватажко М.А. ІМ-11 ЛР-2 Варіант 3</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+
+      table {
+         width: 100%;
+         border-collapse: collapse;
+         table-layout: fixed;
+      }
+
+      td {
+         border: 2px solid black;
+         text-align: left;
+         padding: 4.7px;
+         font-size: 1.5em;
+         word-break: break-word;
+         color: #F5A4AB;
+      }
+
+      #third-row {
+         height: 47px;
+      }
+
+      .hide-text {
+         color: rgb(255, 255, 255);
+      }
+
+      tr:nth-last-child(4) {
+         background-color: #038f8f;
+      }
+
+      tr:nth-last-child(3) {
+         background-color: #f5f503;
+      }
+
+      tr:nth-last-child(4):hover {
+         background-color: #f5f503;
+      }
+
+      tr:nth-last-child(3):hover {
+         background-color: #038f8f;
+      }
+
+   </style>
+</head>
+<body>
+   <table>
+      <tr>
+         <td rowspan="2">Ватажко</td>
+         <td>Михайло</td>
+         <td rowspan="2" colspan="2">Андрійович</td>
+      </tr>
+      <tr>
+         <td>ІМ-11 ЛР-2 Варіант 3</td>
+      </tr>
+      <tr id="third-row">
+         <td></td>
+         <td></td>
+         <td></td>
+         <td class="hide-text">.</td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td class="hide-text" colspan="2">.</td>
+      </tr>
+   </table>
+   <div class="blocks position">
+      <div class="block first-color-block"></div>
+      <div class="block second-color-block"></div>
+      <div class="block third-color-block"></div>
+   </div>
+   <div class="blocks transform">
+      <div class="block first-color-block"></div>
+      <div class="block second-color-block"></div>
+      <div class="block third-color-block"></div>
+   </div>
+</body>
+</html>
