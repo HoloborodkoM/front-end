@@ -55,3 +55,17 @@ body {
    margin: auto;
    white-space: nowrap;
 }
+
+@media screen and (max-width: 765px) {
+   .text {
+      font-size: calc(100% + 0.008*((100vw - 765px)));
+      line-height: calc(20px - 0.008*((100vw - 765px)));
+   }
+}
+
+@media screen and (max-height: 882px) {
+   .text {
+      font-size: calc(100% + 0.0001*((100vh - 882px)));
+      line-height: calc(18px + 0.02*((100vh - 882px)));
+   }
+}
