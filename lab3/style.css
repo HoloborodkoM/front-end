@@ -1,0 +1,42 @@
+html {
+   height: 100%;
+}
+
+body {
+   height: 100%;
+   max-width: 1500px;
+   margin: 0px auto;
+}
+
+#exercise-1 {
+   height: 100%;
+}
+
+.one {
+   height: 18.75%;
+   width: 100%;
+   background-color: greenyellow;
+   color: black;
+}
+
+.two {
+   height: 66.25%;
+   width: 25%;
+   background-color: rgb(238, 255, 0);
+   color: black;
+   float: left;
+}
+
+.three {
+   height: 66.25%;
+   width: 75%;
+   float: right;
+}
+
+.four {
+   height: 15%;
+   width: 100%;
+   background-color: rgba(206, 207, 130, 0.932);
+   color: black;
+   clear: both;
+}
