@@ -5,10 +5,18 @@ html, body {
 body {
    max-width: 1500px;
    margin: 0px auto;
+   background-color:tan;
 }
 
-#exercise-1 {
+#exercise-1, #exercise-2 {
    height: 100%;
+}
+
+#exercise-2 {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 .first-block {
@@ -20,7 +28,6 @@ body {
    height: 66.25%;
    width: 25%;
    background-color: skyblue;
-   float: left;
    display: grid;
    overflow: auto;
 }
@@ -28,7 +35,6 @@ body {
 .third-block {
    height: 66.25%;
    width: 75%;
-   float: right;
 }
 
 .fourth-block {
@@ -69,6 +75,14 @@ body {
 
 #bottom-margin {
    transform: translate(0px, -4px);
+}
+
+.left-float {
+   float: left;
+}
+
+.right-float {
+   float: right;
 }
 
 @media screen and (max-width: 765px) {
