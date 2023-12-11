@@ -1,0 +1,99 @@
+html, body {
+   height: 100%;
+}
+
+body {
+   max-width: 1500px;
+   margin: 0px auto;
+   background-color:tan;
+}
+
+#exercise-1, #exercise-2 {
+   height: 100%;
+}
+
+#exercise-2 {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.first-block {
+   height: 18.75%;
+   width: 100%;
+}
+
+.second-block {
+   height: 66.25%;
+   width: 25%;
+   background-color: skyblue;
+   display: grid;
+   overflow: auto;
+}
+
+.third-block {
+   height: 66.25%;
+   width: 75%;
+}
+
+.fourth-block {
+   height: 15%;
+   width: 100%;
+   background-color: yellow;
+   clear: both;
+   overflow: auto;
+}
+
+.img-block {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.text {
+   color: black;
+   font-size: 1.21rem;
+   line-height: 20px;
+}
+
+.text-second-block {
+   margin: auto;
+   white-space: nowrap;
+}
+
+.text-fourth-block {
+   margin-left: 1%;
+   margin-top: 0.7%;
+   margin-bottom: 0;
+   margin-right: 0;
+}
+.top-margin {
+   transform: translate(0px, 4px);
+}
+
+.bottom-margin {
+   transform: translate(0px, -4px);
+}
+
+#left-float {
+   float: left;
+}
+
+#right-float {
+   float: right;
+}
+
+@media screen and (max-width: 765px) {
+   .text {
+      font-size: calc(100% + 0.008*((100vw - 765px)));
+      line-height: calc(20px - 0.008*((100vw - 765px)));
+   }
+}
+
+@media screen and (max-height: 882px) {
+   .text {
+      font-size: calc(100% + 0.0001*((100vh - 882px)));
+      line-height: calc(18px + 0.02*((100vh - 882px)));
+   }
+}
