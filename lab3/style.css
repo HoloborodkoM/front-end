@@ -68,20 +68,19 @@ body {
    margin-bottom: 0;
    margin-right: 0;
 }
-
-#top-margin {
+.top-margin {
    transform: translate(0px, 4px);
 }
 
-#bottom-margin {
+.bottom-margin {
    transform: translate(0px, -4px);
 }
 
-.left-float {
+#left-float {
    float: left;
 }
 
-.right-float {
+#right-float {
    float: right;
 }
 
