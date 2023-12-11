@@ -20,7 +20,6 @@ body {
    height: 66.25%;
    width: 25%;
    background-color: skyblue;
-   color: black;
    float: left;
    display: grid;
    overflow: auto;
@@ -32,12 +31,12 @@ body {
    float: right;
 }
 
-.four {
+.fourth-block {
    height: 15%;
    width: 100%;
-   background-color: rgba(206, 207, 130, 0.932);
-   color: black;
+   background-color: yellow;
    clear: both;
+   overflow: auto;
 }
 
 .img-block {
@@ -47,6 +46,7 @@ body {
 }
 
 .text {
+   color: black;
    font-size: 1.21rem;
    line-height: 20px;
 }
@@ -54,6 +54,21 @@ body {
 .text-second-block {
    margin: auto;
    white-space: nowrap;
+}
+
+.text-fourth-block {
+   margin-left: 1%;
+   margin-top: 0.7%;
+   margin-bottom: 0;
+   margin-right: 0;
+}
+
+#top-margin {
+   transform: translate(0px, 4px);
+}
+
+#bottom-margin {
+   transform: translate(0px, -4px);
 }
 
 @media screen and (max-width: 765px) {
