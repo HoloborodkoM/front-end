@@ -20,3 +20,27 @@ const changeColor = (element) => {
 
 getFirstElement.onclick = () => changeColor(getFirstElement);
 getSecondElement.onclick = () => changeColor(getSecondElement);
+
+const variabilityButtons = document.createElement('div');
+variabilityButtons.id = 'buttons';
+document.body.append(variabilityButtons);
+
+const buttonAddImage = document.createElement('button');
+buttonAddImage.id = 'add-image';
+buttonAddImage.textContent = 'Додати';
+variabilityButtons.append(buttonAddImage);
+
+const buttonIncreaseImage = document.createElement('button');
+buttonIncreaseImage.id = 'increase-image';
+buttonIncreaseImage.textContent = 'Збільшити';
+variabilityButtons.append(buttonIncreaseImage);
+
+const buttonReduceImage = document.createElement('button');
+buttonReduceImage.id = 'reduce-image';
+buttonReduceImage.textContent = 'Зменшити';
+variabilityButtons.append(buttonReduceImage);
+
+const buttonDeleteImage = document.createElement('button');
+buttonDeleteImage.id = 'delete-image';
+buttonDeleteImage.textContent = 'Видалити';
+variabilityButtons.append(buttonDeleteImage);
