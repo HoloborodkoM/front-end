@@ -44,3 +44,34 @@ const buttonDeleteImage = document.createElement('button');
 buttonDeleteImage.id = 'delete-image';
 buttonDeleteImage.textContent = 'Видалити';
 variabilityButtons.append(buttonDeleteImage);
+
+const imgElement = document.querySelector('#img-container');
+
+const addImage = () => {
+   const newImg = document.createElement('img');
+   newImg.src = 'img/Odesa.jpg';
+   newImg.alt = 'тут повинно бути фото';
+   imgElement.append(newImg);
+}
+
+const increaseImage = () => {
+   const lastImg = imgElement.lastElementChild;
+   const lastImgWidth = lastImg.width;
+   lastImg.style.width = (lastImgWidth * 1.05) + 'px';
+}
+
+const reduceImage = () => {
+   const lastImg = imgElement.lastElementChild;
+   const lastImgWidth = lastImg.width;
+   lastImg.style.width = (lastImgWidth * 0.95) + 'px';
+}
+
+const deleteImage = () => {
+   const lastImg = imgElement.lastElementChild;
+   lastImg.remove();
+}
+
+buttonAddImage.addEventListener('click', addImage);
+buttonIncreaseImage.addEventListener('click', increaseImage);
+buttonReduceImage.addEventListener('click', reduceImage);
+buttonDeleteImage.addEventListener('click', deleteImage);
