@@ -1,0 +1,15 @@
+body, button {
+   font-size: 1.21rem;
+}
+
+#buttons {
+   display: flex;
+}
+
+button {
+   flex-basis: 25%;
+}
+
+img {
+   width: 20cm;
+}
