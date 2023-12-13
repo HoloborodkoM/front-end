@@ -1,6 +1,8 @@
 const tableSize = 6;
+const variant = 3;
 let value = 0;
 
+const colorPicker = document.querySelector('#color-picker');
 const getTableElement = document.querySelector('#table-six-x-six');
 
 for (let i = 0; i < tableSize; i++) {
@@ -27,4 +29,18 @@ const getRandomColor = () => {
       color += possibleLetters[Math.floor(Math.random() * 16)];
    }
    return color;
+}
+
+const variantCell = document.querySelector(`#cell-${variant}`);
+
+const changeColor = (cell, isColorPicked = false, isDbClick = false) => {
+   const clickColor = colorPicker.value;
+   if (isColorPicked) {
+      cell.style.backgroundColor = clickColor;
+      if (isDbClick) {
+         //colorMainDiagonal(clickColor);
+      }
+   } else {
+      cell.style.backgroundColor = getRandomColor();
+   }
 }
