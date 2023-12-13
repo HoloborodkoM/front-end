@@ -42,16 +42,16 @@ sendButton.addEventListener('click', () => {
          errorCounter++;
 
       }
+   }
 
-      if (errorCounter === 0) {
-         const text =  'Введені дані\n'
-                     + `ПІБ: ${formInputElements.formName.value}\n`
-                     + `Телефон: ${formInputElements.formPhone.value}\n`
-                     + `ID-card: ${formInputElements.formIdCard.value}\n`
-                     + `Факультет: ${formInputElements.formFaculty.value}\n`
-                     + `Дата народження: ${formInputElements.formBirthDate.value}`;
-         setTimeout(() => alert(text), 10);
-      }
+   if (errorCounter === 0) {
+      const text =  'Введені дані\n'
+                  + `ПІБ: ${formInputElements.formName.value}\n`
+                  + `Телефон: ${formInputElements.formPhone.value}\n`
+                  + `ID-card: ${formInputElements.formIdCard.value}\n`
+                  + `Факультет: ${formInputElements.formFaculty.value}\n`
+                  + `Дата народження: ${formInputElements.formBirthDate.value}`;
+      setTimeout(() => alert(text), 10);
    }
 })
 
