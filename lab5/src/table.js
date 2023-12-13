@@ -38,9 +38,25 @@ const changeColor = (cell, isColorPicked = false, isDbClick = false) => {
    if (isColorPicked) {
       cell.style.backgroundColor = clickColor;
       if (isDbClick) {
-         //colorMainDiagonal(clickColor);
+         colorMainDiagonal(clickColor);
       }
    } else {
       cell.style.backgroundColor = getRandomColor();
+   }
+}
+
+const colorMainDiagonal = (color) => {
+   let tempValue = 0;
+   let position = 1;
+
+   for (let i = 0; i < tableSize; i++) {
+
+      const neededCell = tempValue + position;
+      document.querySelector(`#cell-${neededCell}`).style.backgroundColor = color;
+      
+      for (let j = 0; j < tableSize; j++){
+         tempValue++;
+      }
+      position++;
    }
 }
