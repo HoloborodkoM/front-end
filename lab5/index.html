@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="Лабораторна робота, Основи Front-end">
+   <meta name="description" content="Сторінка з лабораторною роботою №5 Ватажка М.А.">
+   <title>Ватажко М.А. ІМ-11 ЛР-5 Варіант 3</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <form id="task-one-form">
+      <h2>Форма для заповнення</h2>
+      <input class="not-error-input" type="text" id="name" placeholder="ПІБ">
+      <p class="hidden-info" id="name-error">Невірний формат ПІБ, очікується: Прізвище І.Б.</p>
+      <input class="not-error-input" type="text" id="phone" placeholder="Телефон">
+      <p class="hidden-info" id="phone-error">Невірний формат телефону, очікується: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ</p>
+      <input class="not-error-input" type="text" id="id-card" placeholder="ID-card">
+      <p class="hidden-info" id="id-card-error">Невірний формат ID-card, очікується: ТТ №ЧЧЧЧЧЧ</p>
+      <input class="not-error-input" type="text" id="faculty" placeholder="Факультет">
+      <p class="hidden-info" id="faculty-error">Невірний формат факультету, очікується: ТТТТ</p>
+      <input class="not-error-input" type="text" id="birth-date" placeholder="Дата народження">
+      <p class="hidden-info" id="birth-date-error">Невірний формат дати народження, очікується: ЧЧ.ЧЧ.ЧЧЧЧ</p>
+      <button type="button" id="send-button">Відправити</button>
+   </form>
+   <div id="task-two-table">
+      <input type="color" id="color-picker" value="#5cdf05">
+      <table id="table-six-x-six"></table>
+   </div>
+  <script src="src/form.js"></script>
+  <script src="src/table.js"></script>
+</body>
+</html>

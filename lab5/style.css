@@ -1,0 +1,64 @@
+body {
+   height: 100vh;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#task-one-form, #task-two-table {
+   width: 320px;
+   padding: 40px;
+}
+
+#task-two-table {
+   border-left: 2px solid black;
+   padding-top: 20px;
+   padding-bottom: 0px;
+}
+
+h2 {
+   text-align: center;
+}
+
+input, button {
+   height: 50px;
+   width: 100%;
+   box-sizing: border-box;
+   border: 2px solid black;
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 1.10rem;
+}
+
+.hidden-info {
+   display: none;
+}
+
+.not-error-input, .error {
+   margin-block-end: 20px;
+   writing-mode: horizontal-tb;
+}
+
+.error {
+   font-size: 0.75rem;
+   color: red;
+}
+
+.error-input {
+   border-color: red;
+}
+
+table {
+   font-size: 1.10rem;
+   height: 320px;
+   width: 320px;
+   border-collapse: collapse;
+   margin-top: 40px;
+}
+
+td {
+   border: 2px solid black;
+   padding: 3px;
+   text-align: center;
+}
