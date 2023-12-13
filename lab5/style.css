@@ -6,9 +6,15 @@ body {
    align-items: center;
 }
 
-#task-one-form {
+#task-one-form, #task-two-table {
    width: 320px;
    padding: 40px;
+}
+
+#task-two-table {
+   border-left: 2px solid black;
+   padding-top: 20px;
+   padding-bottom: 0px;
 }
 
 h2 {
