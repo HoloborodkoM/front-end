@@ -18,3 +18,13 @@ for (let i = 0; i < tableSize; i++) {
 
    }
 }
+
+const getRandomColor = () => {
+   const possibleLetters = '0123456789ABCDEF';
+   let color = '#';
+
+   for (let i = 0; i < 6; i++) {
+      color += possibleLetters[Math.floor(Math.random() * 16)];
+   }
+   return color;
+}
