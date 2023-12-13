@@ -26,9 +26,9 @@ const sendButton = document.getElementById('send-button');
 
 sendButton.addEventListener('click', () => {
    const fields = Object.keys(formInputElements);
+   let errorCounter = 0;
    
    for (const element of fields) {
-      let errorCounter = 0;
 
       basicStyles(element);
       const inputValue = formInputElements[element].value;
