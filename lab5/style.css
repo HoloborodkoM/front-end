@@ -28,3 +28,17 @@ input, button {
 .hidden-info {
    display: none;
 }
+
+.not-error-input, .error {
+   margin-block-end: 20px;
+   writing-mode: horizontal-tb;
+}
+
+.error {
+   font-size: 0.75rem;
+   color: red;
+}
+
+.error-input {
+   border-color: red;
+}

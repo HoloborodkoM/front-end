@@ -21,3 +21,23 @@ const formRegularExpressions = {
    formFacultyPattern: new RegExp(`^${ukrainianPattern.capitalLetters}{4}$`),
    formBirthDatePattern: new RegExp('^(0[1-9]|[12]\\d|3[01])\\.(0[1-9]|1[0-2])\\.(19[2-9]\\d|2[01]\\d{2})$'),
 }
+
+const sendButton = document.getElementById('send-button');
+
+sendButton.addEventListener('click', () => {
+   const fields = Object.keys(formInputElements);
+   
+   for (const element of fields) {
+
+      const inputValue = formInputElements[element].value;
+
+      if (!formRegularExpressions[`${element}Pattern`].test(inputValue)) {
+
+         formInputElements[element].classList.remove('not-error-input');
+         formInputElements[element].classList.add('error-input');
+         document.getElementById(`${formInputElements[element].id}-error`).classList.remove('hidden-info');
+         document.getElementById(`${formInputElements[element].id}-error`).classList.add('error');
+
+      }
+   }
+})
