@@ -60,3 +60,7 @@ const colorMainDiagonal = (color) => {
       position++;
    }
 }
+
+variantCell.addEventListener('mouseover', () => changeColor(variantCell));
+variantCell.addEventListener('click', () => changeColor(variantCell, true));
+variantCell.addEventListener('dblclick', () => changeColor(variantCell, true, true));
