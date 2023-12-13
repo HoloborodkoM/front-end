@@ -24,3 +24,7 @@ input, button {
    border-radius: 5px;
    font-size: 1.10rem;
 }
+
+.hidden-info {
+   display: none;
+}
