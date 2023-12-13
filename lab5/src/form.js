@@ -29,6 +29,7 @@ sendButton.addEventListener('click', () => {
    
    for (const element of fields) {
 
+      basicStyles(element);
       const inputValue = formInputElements[element].value;
 
       if (!formRegularExpressions[`${element}Pattern`].test(inputValue)) {
@@ -41,3 +42,10 @@ sendButton.addEventListener('click', () => {
       }
    }
 })
+
+const basicStyles = (element) => {
+   formInputElements[element].classList.add('not-error-input');
+   formInputElements[element].classList.remove('error-input');
+   document.getElementById(`${formInputElements[element].id}-error`).classList.add('hidden-info'); 
+   document.getElementById(`${formInputElements[element].id}-error`).classList.remove('error');
+}
