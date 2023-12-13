@@ -28,6 +28,7 @@ sendButton.addEventListener('click', () => {
    const fields = Object.keys(formInputElements);
    
    for (const element of fields) {
+      let errorCounter = 0;
 
       basicStyles(element);
       const inputValue = formInputElements[element].value;
@@ -38,7 +39,18 @@ sendButton.addEventListener('click', () => {
          formInputElements[element].classList.add('error-input');
          document.getElementById(`${formInputElements[element].id}-error`).classList.remove('hidden-info');
          document.getElementById(`${formInputElements[element].id}-error`).classList.add('error');
+         errorCounter++;
 
+      }
+
+      if (errorCounter === 0) {
+         const text =  'Введені дані\n'
+                     + `ПІБ: ${formInputElements.formName.value}\n`
+                     + `Телефон: ${formInputElements.formPhone.value}\n`
+                     + `ID-card: ${formInputElements.formIdCard.value}\n`
+                     + `Факультет: ${formInputElements.formFaculty.value}\n`
+                     + `Дата народження: ${formInputElements.formBirthDate.value}`;
+         setTimeout(() => alert(text), 10);
       }
    }
 })
