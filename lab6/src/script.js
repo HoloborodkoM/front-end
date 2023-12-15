@@ -24,4 +24,20 @@ const getUsers = () => {
    })
 }
 
+const fillUsersInfo = (users) => {
+
+   users.forEach(user => {
+      
+      const userData = {
+         userPicture: user.picture.large,
+         userPhone: user.phone,
+         userCoordinates: `ш."${user.location.coordinates.latitude}" та ` + 
+                          `д."${user.location.coordinates.longitude}"`,
+         userPostcode: user.location.postcode,
+         userCountry: user.location.country,
+      }
+
+   });
+}
+
 downloadButton.addEventListener('click', () => getUsers());
