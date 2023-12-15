@@ -4,6 +4,11 @@ const requestInfo = document.querySelector('.hidden-info');
 
 const getUsers = () => {
 
+   const getCurrentUsers = document.querySelectorAll('.user-info');
+   if (getCurrentUsers.length) {
+      getCurrentUsers.forEach(elem => elem.remove());
+   }
+   
    requestInfo.classList.remove('hidden-info');
    let url = new URL('https://randomuser.me/api');
    url.searchParams.append('results', 5);
