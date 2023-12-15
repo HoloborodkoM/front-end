@@ -1,0 +1,20 @@
+body {
+   background-color: gainsboro;
+   font-size: 1.21rem;
+}
+
+.hidden-info {
+   display: none;
+}
+
+#get-users-info {
+   font-size: 1.21rem;
+   background-color: #000000;
+   color: rgb(255, 255, 255);
+   display: block;
+   margin: 10px auto;
+   margin-bottom: 30px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 5px 5px 3px black;
+}
