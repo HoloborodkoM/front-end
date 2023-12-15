@@ -18,3 +18,34 @@ body {
    border-radius: 5px;
    box-shadow: 5px 5px 3px black;
 }
+
+#output {
+   display: flex;
+   align-items: stretch;
+}
+
+.user-info, img {
+   border: 1px solid black;
+}
+
+.user-info {
+   flex-basis: 20%;
+   background-color: azure;
+}
+
+h3 {
+   text-align: center;
+   margin-bottom: 15px;
+   color: black;
+}
+
+img {
+   width: 100%;
+}
+
+p {
+   margin: 15px 0;
+   text-align: center;
+   line-height: 1.5;
+   word-break: break-word;
+}
