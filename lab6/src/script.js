@@ -37,6 +37,31 @@ const fillUsersInfo = (users) => {
          userCountry: user.location.country,
       }
 
+      const userElement = document.createElement('div');
+      userElement.classList.add('user-info');
+      outputUsers.append(userElement);
+
+      const picture = document.createElement('img');
+      picture.src = userData.userPicture;
+      picture.alt = 'тут повинно бути фото';
+      userElement.append(picture);
+
+      const phone = document.createElement('p');
+      phone.textContent = `Телефон: ${userData.userPhone}`;
+      userElement.append(phone);
+
+      const coordinates = document.createElement('p');
+      coordinates.textContent = `Координати: ${userData.userCoordinates}`;
+      userElement.append(coordinates);
+
+      const postcode = document.createElement('p');
+      postcode.textContent = `Поштовий індекс: ${userData.userPostcode}`;
+      userElement.append(postcode);
+
+      const country = document.createElement('p');
+      country.textContent = `Країна: ${userData.userCountry}`;
+      userElement.append(country);
+
    });
 }
 
